@@ -4,7 +4,7 @@ function CubeInput({ numbers, setNumbers }) {
   let refs = useRef(new Array(numbers.length).fill().map(a => createRef()))
 
   const handleInput = ({ target: { id, value } }) => {
-    if ((!value.match(/^[0-9]*$/))) return
+    if (!value.match(/^[0-9]*$/)) return
 
     const newNumbers = numbers.slice(0)
     newNumbers[id] = value

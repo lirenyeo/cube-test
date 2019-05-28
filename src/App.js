@@ -37,8 +37,6 @@ function App(props) {
     )
   }
 
-
-
   return (
     <div>
       <h2>Cube One</h2>
